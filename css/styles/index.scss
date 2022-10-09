@@ -1,0 +1,178 @@
+@import "colors";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 16px sans-serif;
+    color: var(--color-text-0);
+    background: var(--color-bg-0);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+
+    &:hover {
+        color: var(--color-link-hover);
+    }
+
+    &:active {
+        color: var(--color-link-active);
+    }
+
+    &:visited {
+        color: var(--color-link-visited);
+    }
+}
+
+.button {
+    font-size: .9rem;
+    font-weight: bold;
+    text-decoration: none;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    padding: 0 .6rem;
+    border: 0;
+    border-radius: .2rem;
+    outline: none;
+    white-space: nowrap;
+    color: var(--color-text-1);
+    background-color: var(--color-fill-0);
+
+    svg {
+        fill: var(--color-text-1);
+        width: .9rem;
+        height: .9rem;
+        line-height: 1;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        background-color: var(--color-fill-1);
+    }
+
+    &.button-primary {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-primary);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-primary-hover);
+        }
+    }
+
+    &.button-secondary {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-secondary);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-secondary-hover);
+        }
+    }
+
+    &.button-tertiary {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-tertiary);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-tertiary-hover);
+        }
+    }
+
+    &.button-info {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-info);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-info-hover);
+        }
+    }
+
+    &.button-success {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-success);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-success-hover);
+        }
+    }
+
+    &.button-warning {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-warning);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-warning-hover);
+        }
+    }
+
+    &.button-danger {
+        color: rgba(var(--white), 1);
+        background-color: var(--color-danger);
+
+        svg {
+            fill: rgba(var(--white), 1);
+        }
+
+        &:hover {
+            background-color: var(--color-danger-hover);
+        }
+    }
+
+    &.button-block {
+        display: block;
+        width: 100%;
+    }
+}
+
+.input,
+.select {
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    color: inherit;
+    padding: 0 .6rem;
+    box-sizing: border-box;
+    color: var(--semi-color-text-0);
+    background-color: var(--color-fill-0);
+    border-radius: .2rem;
+
+    &:focus {
+        border-color: var(--color-focus-border);
+        background-color: var(--color-fill-2);
+    }
+}
